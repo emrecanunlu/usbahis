@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+:root {
+  /* UsBahis — koyu lacivert zemin + kırmızı vurgu (usbahis871.com) */
+  --background: #05070e;
+  --surface: #0c1422;
+  --surface-2: #0a172d;
+  --surface-3: #14223d;
+  --foreground: #ffffff;
+  --body: #c8cdd5;
+  --muted: #898b91;
+  --placeholder: #6b7280;
+
+  --pink: #db0000;
+  --pink-soft: #ff4444;
+  --violet: #8b0101;
+  --violet-deep: #8b0101;
+  --cyan: #ffffff;
+
+  --border: rgba(219, 0, 0, 0.2);
+  --hero-glow-a: rgba(139, 1, 1, 0.28);
+  --hero-glow-b: rgba(219, 0, 0, 0.22);
+  --btn-shadow: rgba(219, 0, 0, 0.55);
+  --blockquote: #d4d8de;
+  --scrollbar: rgba(219, 0, 0, 0.35);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-foreground: var(--foreground);
+  --color-body: var(--body);
+  --color-muted: var(--muted);
+  --color-pink: var(--pink);
+  --color-violet: var(--violet);
+  --color-violet-deep: var(--violet-deep);
+  --color-cyan: var(--cyan);
+
+  --color-pink-400: #ff3333;
+  --color-pink-500: #db0000;
+  --color-fuchsia-500: #c40000;
+  --color-fuchsia-600: #8b0101;
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-sora);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto,
+    sans-serif;
+  overflow-x: clip;
+  width: 100%;
+}
+
+* {
+  min-width: 0;
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-sora), var(--font-inter), system-ui, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  .text-gradient-neon {
+    background: linear-gradient(
+      90deg,
+      #ff4444 0%,
+      #db0000 45%,
+      #8b0101 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .text-pink {
+    color: var(--pink);
+  }
+  .text-violet {
+    color: var(--violet);
+  }
+  .text-muted {
+    color: var(--muted);
+  }
+
+  .border-soft {
+    border-color: var(--border);
+  }
+
+  .bg-surface {
+    background: var(--surface);
+  }
+  .bg-surface-2 {
+    background: var(--surface-2);
+  }
+  .bg-surface-3 {
+    background: var(--surface-3);
+  }
+
+  .btn-primary {
+    background: linear-gradient(90deg, #8b0101 0%, #db0000 75%);
+    color: #ffffff;
+    box-shadow: 0 10px 30px -10px var(--btn-shadow);
+    transition: filter 0.15s ease, transform 0.15s ease;
+  }
+  .btn-primary:hover {
+    filter: brightness(1.08);
+  }
+  .btn-primary:active {
+    transform: translateY(1px);
+  }
+
+  .btn-secondary {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    transition: background 0.15s ease, border-color 0.15s ease;
+  }
+  .btn-secondary:hover {
+    border-color: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .prose-mb h2 {
+    @apply mt-8 mb-3 font-display text-2xl font-bold tracking-tight text-white;
+  }
+  .prose-mb h3 {
+    @apply mt-6 mb-2 font-display text-xl font-semibold text-white;
+  }
+  .prose-mb p {
+    @apply mb-4 text-[15px] leading-7 text-body;
+  }
+  .prose-mb ul {
+    @apply mb-5 ml-5 list-disc space-y-1.5 text-[15px] leading-7 text-body;
+  }
+  .prose-mb ol {
+    @apply mb-5 ml-5 list-decimal space-y-1.5 text-[15px] leading-7 text-body;
+  }
+  .prose-mb a {
+    @apply text-pink underline-offset-2 transition-colors hover:text-[var(--pink-soft)] hover:underline;
+  }
+  .prose-mb strong {
+    @apply font-semibold text-white;
+  }
+  .prose-mb blockquote {
+    @apply my-5 rounded-r-xl border-l-4 border-pink bg-white/[0.03] px-5 py-3 italic;
+    color: var(--blockquote);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0ms !important;
+    transition-duration: 0ms !important;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar) transparent;
+}
