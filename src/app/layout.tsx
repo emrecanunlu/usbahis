@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     template: "%s | UsBahis",
   },
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://usbahis.vercel.app",
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.usbahisonline.com",
   ),
   authors: [{ name: "UsBahis" }],
   creator: "UsBahis",

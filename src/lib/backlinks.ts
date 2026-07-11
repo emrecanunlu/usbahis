@@ -16,7 +16,7 @@ export const BACKLINK_PARTNERS: BacklinkPartner[] = [
   {
     slug: "usbahis-resmi",
     name: "UsBahis Resmi",
-    url: "https://usbahis871.com",
+    url: "https://usgrs.link/usgir",
     description:
       "Lisanslı canlı bahis, casino ve slot. %100 hoş geldin bonusu, 3 dk para çekim, 7/24 Türkçe destek.",
     badge: "Resmi Site",
@@ -26,7 +26,7 @@ export const BACKLINK_PARTNERS: BacklinkPartner[] = [
   {
     slug: "usbahis-guncel",
     name: "UsBahis Güncel Giriş",
-    url: "https://usbahis871.com",
+    url: "https://usgrs.link/usgir",
     description:
       "Erişim engeli sonrası güncel domain adresi. Anında giriş, Papara ve kripto ile hızlı yatırım.",
     badge: "Güncel Link",
@@ -36,7 +36,7 @@ export const BACKLINK_PARTNERS: BacklinkPartner[] = [
   {
     slug: "usbahis-bonus",
     name: "UsBahis Bonus",
-    url: "https://usbahis871.com",
+    url: "https://usgrs.link/usgir",
     description:
       "%100 hoş geldin, %50 yatırım ve haftalık kayıp bonusu. Düşük çevrim şartlarıyla ekstra kazanç.",
     badge: "Bonus",
@@ -46,7 +46,7 @@ export const BACKLINK_PARTNERS: BacklinkPartner[] = [
   {
     slug: "usbahis-casino",
     name: "UsBahis Casino",
-    url: "https://usbahis871.com",
+    url: "https://usgrs.link/usgir",
     description:
       "Evolution ve Pragmatic Live ile 180+ canlı masa. Türkçe krupiye, Crazy Time, rulet ve blackjack.",
     badge: "Canlı Casino",
@@ -56,7 +56,7 @@ export const BACKLINK_PARTNERS: BacklinkPartner[] = [
   {
     slug: "mekanbahis-tanitim",
     name: "Mekanbahis Tanıtım",
-    url: "https://mekanbahis.vercel.app",
+    url: "https://www.mekanbahisonline.com",
     description:
       "Mekanbahis resmi tanıtım sitesi. Güncel giriş adresi, bonus rehberleri ve casino incelemeleri.",
     badge: "Partner",
@@ -66,7 +66,7 @@ export const BACKLINK_PARTNERS: BacklinkPartner[] = [
   {
     slug: "lakebahis-tanitim",
     name: "LakeBahis Tanıtım",
-    url: "https://lakebahis.vercel.app",
+    url: "https://www.lakebahisonline.com",
     description:
       "LakeBahis resmi tanıtım sitesi. Güncel giriş, oyun rehberleri ve kampanya bilgileri.",
     badge: "Partner",
@@ -76,7 +76,7 @@ export const BACKLINK_PARTNERS: BacklinkPartner[] = [
   {
     slug: "usbahis-aviator",
     name: "UsBahis Aviator",
-    url: "https://usbahis871.com",
+    url: "https://usgrs.link/usgir",
     description:
       "Spribe Aviator ve crash oyunları. Otomatik cash out, çift bahis ve günlük cashback.",
     badge: "Aviator",
@@ -86,7 +86,7 @@ export const BACKLINK_PARTNERS: BacklinkPartner[] = [
   {
     slug: "usbahis-mobil",
     name: "UsBahis Mobil",
-    url: "https://usbahis871.com",
+    url: "https://usgrs.link/usgir",
     description:
       "Mobil tarayıcıdan uygulama indirmeden giriş. iOS ve Android uyumlu responsive arayüz.",
     badge: "Mobil",

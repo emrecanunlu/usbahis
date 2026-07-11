@@ -1,7 +1,7 @@
 export const FAQ_ITEMS = [
   {
     q: "UsBahis güncel giriş adresi nedir?",
-    a: "UsBahis güncel giriş adresi usbahis871.com'dur. Erişim engellerinden etkilenmemek için bu sayfanın üst kısmındaki 'Güncel Giriş Adresi' butonunu kullanabilirsin; her zaman yeni adrese yönlendirilirsin.",
+    a: "UsBahis güncel giriş linki usgrs.link/usgir adresidir. Bu kalıcı yönlendirme linki domain değişse bile her zaman güncel adrese otomatik yönlendirir; sayfanın üst kısmındaki 'Güncel Giriş Adresi' butonunu da kullanabilirsin.",
   },
   {
     q: "Üyelik açmak ücretsiz mi?",

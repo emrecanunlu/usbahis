@@ -23,7 +23,7 @@ export const POSTS: Post[] = [
 <p><strong>UsBahis</strong>, Türkiye'nin en güvenilir bahis ve casino platformlarından biri olarak hizmet vermeye devam ediyor. Erişim engelleri nedeniyle zaman zaman domain adresi güncellenmek zorunda kalsa da, platform her zaman aynı kalitede hizmetini sürdürüyor.</p>
 
 <h2>Güncel Giriş Adresi Nedir?</h2>
-<p>2026 yılı itibariyle UsBahis'in güncel giriş adresi <strong>usbahis871.com</strong>'dur. BTK tarafından uygulanan erişim engelleri sebebiyle domain numarası periyodik olarak güncellenir. Eski adresin engellenmesi durumunda yeni domain otomatik olarak devreye alınır ve kullanıcılar yeni adrese yönlendirilir.</p>
+<p>2026 yılı itibariyle UsBahis'in güncel giriş linki <strong>usgrs.link/usgir</strong> adresidir. Bu kalıcı yönlendirme linki, BTK erişim engelleri nedeniyle domain numarası değişse bile otomatik olarak yeni adrese yönlendirir; her seferinde yeni domain aramanıza gerek kalmaz.</p>
 
 <h2>Güncel Adrese Nasıl Ulaşılır?</h2>
 <p>UsBahis güncel adresine ulaşmanın birkaç güvenli yolu bulunur:</p>
