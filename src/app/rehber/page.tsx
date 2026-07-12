@@ -8,7 +8,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { PartnerSites } from "@/components/PartnerSites";
 import { JsonLd } from "@/components/JsonLd";
 import { getAllSeoPages } from "@/lib/seo-pages";
-import { buildMetadata, breadcrumbJsonLd, webPageJsonLd } from "@/lib/seo";
+import { buildMetadata, breadcrumbJsonLd, webPageJsonLd, itemListJsonLd, absoluteUrl } from "@/lib/seo";
 import { PAGE_KEYWORDS } from "@/lib/keywords";
 
 export const metadata: Metadata = buildMetadata({
@@ -36,6 +36,12 @@ export default function RehberIndex() {
             { name: "Anasayfa", path: "/" },
             { name: "Rehber", path: "/rehber" },
           ]),
+          itemListJsonLd(
+            pages.map((p) => ({
+              name: p.h1,
+              url: absoluteUrl(`/rehber/${p.slug}`),
+            })),
+          ),
         ]}
       />
       <main className="flex-1">

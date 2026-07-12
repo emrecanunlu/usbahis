@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SITE } from "@/lib/site";
 
 export function Hero() {
@@ -11,20 +12,22 @@ export function Hero() {
         <div className="max-w-3xl">
           <span className="inline-flex items-center gap-2 rounded-full border border-pink/30 bg-pink/10 px-3 py-1 text-xs font-medium text-[var(--pink-soft)]">
             <span className="h-1.5 w-1.5 rounded-full bg-pink" />
-            UsBahis Resmi Tanıtım Sitesi
+            {SITE.name} Resmi Tanıtım Sitesi — Giriş 2026
           </span>
 
-          <h1 className="font-display mt-5 text-[26px] font-bold leading-[1.15] tracking-tight sm:text-4xl lg:text-[52px]">
-            Güvenilir{" "}
-            <span className="text-gradient-neon">Bahis ve Casino</span>
-            <br className="sm:hidden" /> Deneyimi
+          <h1 className="font-display mt-5 text-[26px] font-bold leading-[1.15] tracking-tight sm:text-4xl lg:text-[48px]">
+            {SITE.name}{" "}
+            <span className="text-gradient-neon">Giriş</span>
+            <br className="hidden sm:block" />
+            <span className="text-white"> — Güncel Adres 2026</span>
           </h1>
 
           <p className="mt-5 text-base leading-7 text-body sm:text-lg">
-            Lisanslı canlı spor bahisleri, gerçek krupiyeli casino oyunları,
-            5.000&apos;den fazla slot, Aviator ve sanal bahis seçenekleri tek
-            platformda. Yüksek oranlar, hızlı para çekme ve 7/24 Türkçe destek
-            ile UsBahis ailesine katıl.
+            Kalıcı giriş linki{" "}
+            <strong className="text-white">{SITE.domain}</strong> üzerinden
+            lisanslı canlı bahis, casino, 5.000+ slot ve Aviator. Domain
+            değişse bile otomatik yönlendirme; %100 hoş geldin bonusu ve 7/24
+            Türkçe destek.
           </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-3">
@@ -32,7 +35,7 @@ export function Hero() {
               href={SITE.registerUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-12 cursor-pointer items-center gap-2 rounded-md btn-primary px-6 text-sm font-semibold text-white  transition-transform active:translate-y-px"
+              className="inline-flex h-12 cursor-pointer items-center gap-2 rounded-md btn-primary px-6 text-sm font-semibold text-white transition-transform active:translate-y-px"
             >
               Hemen Üye Ol
               <svg
@@ -58,11 +61,17 @@ export function Hero() {
             >
               Güncel Giriş Adresi
             </a>
+            <Link
+              href={`/rehber/${SITE.brandSlug}-giris`}
+              className="inline-flex h-12 items-center rounded-md border border-pink/30 bg-pink/10 px-5 text-sm font-medium text-[var(--pink-soft)] transition-colors hover:border-pink/50 hover:bg-pink/15"
+            >
+              Giriş Rehberi
+            </Link>
           </div>
 
           <ul className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted">
             <li className="inline-flex items-center gap-2">
-              <CheckIcon /> Curaçao Lisanslı
+              <CheckIcon /> Kalıcı link: {SITE.domain}
             </li>
             <li className="inline-flex items-center gap-2">
               <CheckIcon /> %100 Hoş Geldin Bonusu
@@ -71,7 +80,7 @@ export function Hero() {
               <CheckIcon /> 3 dakikada para çekim
             </li>
             <li className="inline-flex items-center gap-2">
-              <CheckIcon /> 7/24 Türkçe destek
+              <CheckIcon /> Telegram: {SITE.telegramUrl.replace("https://", "")}
             </li>
           </ul>
         </div>

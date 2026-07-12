@@ -247,6 +247,33 @@ export const SEO_PAGE_KEYWORDS: Record<string, string[]> = {
     "UsBahis BTK engeli giriş",
     "UsBahis adres bildirimi",
   ],
+  "usbahis-telegram-giris": [
+    "UsBahis telegram",
+    "UsBahis telegram giriş",
+    "UsBahis telegram kanalı",
+    "t.me usgiris",
+    "UsBahis telegram link",
+    "UsBahis telegram güncel adres",
+    "UsBahis telegram duyuru",
+  ],
+  "usbahis-kayit-ol": [
+    "UsBahis kayıt ol",
+    "UsBahis üye ol",
+    "UsBahis üyelik",
+    "UsBahis kayıt",
+    "UsBahis hesap aç",
+    "UsBahis yeni üye",
+    "UsBahis ücretsiz kayıt",
+  ],
+  "usbahis-papara-yatirim": [
+    "UsBahis papara",
+    "UsBahis papara yatırım",
+    "UsBahis papara ile yatırım",
+    "UsBahis papara çekim",
+    "UsBahis papara minimum",
+    "UsBahis papara bonus",
+    "UsBahis hızlı yatırım",
+  ],
 };
 
 export const POST_KEYWORDS: Record<string, string[]> = {

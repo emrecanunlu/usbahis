@@ -126,6 +126,23 @@ export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
   };
 }
 
+export function itemListJsonLd(
+  items: { name: string; url: string }[],
+  listName?: string,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: listName ?? `${SITE.name} Rehberleri`,
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      url: item.url,
+    })),
+  };
+}
+
 export function articleJsonLd(opts: {
   title: string;
   description: string;
@@ -135,7 +152,7 @@ export function articleJsonLd(opts: {
 }) {
   return {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: opts.title,
     description: opts.description,
     url: absoluteUrl(opts.path),

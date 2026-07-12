@@ -1,4 +1,5 @@
 import { SEO_PAGE_KEYWORDS } from "./keywords";
+import { ENTRY_SEO_PAGES } from "./entry-seo-pages";
 
 export type SeoPage = {
   slug: string;
@@ -334,6 +335,7 @@ export const SEO_PAGES: SeoPage[] = [
 </ol>
     `,
   },
+  ...ENTRY_SEO_PAGES,
 ];
 
 export function getSeoPageBySlug(slug: string): SeoPage | undefined {

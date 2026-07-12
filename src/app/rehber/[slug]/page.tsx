@@ -54,6 +54,11 @@ export default async function RehberPage({
 
   const related = getAllSeoPages()
     .filter((p) => p.slug !== slug)
+    .sort((a, b) => {
+      const score = (s: string) =>
+        /giris|kayit|telegram|guncel|papara/.test(s) ? 0 : 1;
+      return score(a.slug) - score(b.slug);
+    })
     .slice(0, 4);
 
   return (
