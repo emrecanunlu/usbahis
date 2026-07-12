@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 import { JsonLd } from "@/components/JsonLd";
@@ -19,6 +19,13 @@ const sora = Sora({
   subsets: ["latin", "latin-ext"],
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  themeColor: "#db0000",
+  colorScheme: "dark",
+  width: "device-width",
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   ...buildMetadata({

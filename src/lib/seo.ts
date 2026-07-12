@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { SITE } from "./site";
 
-const DEFAULT_OG = "/images/usbahis.png";
-
 type PageMeta = {
   title: string;
   description: string;
@@ -25,7 +23,7 @@ export function buildMetadata({
   description,
   path = "",
   keywords = [],
-  ogImage = DEFAULT_OG,
+  ogImage,
   noIndex = false,
   type = "website",
   publishedTime,
@@ -53,18 +51,28 @@ export function buildMetadata({
       siteName: SITE.name,
       locale: SITE.locale,
       type,
-      images: [{ url: absoluteUrl(ogImage), width: 309, height: 60, alt: SITE.name }],
+      ...(ogImage ? { images: [{ url: absoluteUrl(ogImage), alt: SITE.name }] } : {}),
       ...(publishedTime ? { publishedTime } : {}),
     },
     twitter: {
       card: "summary_large_image",
       title: fullTitle,
       description: description.slice(0, 160),
-      images: [absoluteUrl(ogImage)],
+      ...(ogImage ? { images: [absoluteUrl(ogImage)] } : {}),
     },
     robots: noIndex
       ? { index: false, follow: false }
-      : { index: true, follow: true, googleBot: { index: true, follow: true } },
+      : {
+          index: true,
+          follow: true,
+          googleBot: {
+            index: true,
+            follow: true,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+            "max-video-preview": -1,
+          },
+        },
   };
 }
 
@@ -73,6 +81,8 @@ export function organizationJsonLd() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: SITE.name,
+    description: `${SITE.name} — ${SITE.tagline}. Lisanslı canlı bahis, casino, slot ve Aviator; güncel giriş, bonuslar ve 7/24 Türkçe destek.`,
+    slogan: SITE.tagline,
     url: absoluteUrl(),
     logo: absoluteUrl("/images/usbahis.png"),
     sameAs: [SITE.telegramUrl, SITE.url],
