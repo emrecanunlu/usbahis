@@ -9,7 +9,7 @@ export const SITE = {
   loginUrl: "https://usgrs.link/usgir",
   registerUrl: "https://usgrs.link/usgir",
   supportEmail: "destek@usbahisonline.com",
-  telegramUrl: "https://t.me/usbahis",
+  telegramUrl: "https://t.me/usgiris",
   locale: "tr_TR",
   language: "tr",
   twitter: "@usbahis",
