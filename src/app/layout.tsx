@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 import { JsonLd } from "@/components/JsonLd";
 import {
@@ -8,18 +7,6 @@ import {
   websiteJsonLd,
 } from "@/lib/seo";
 import { SITE_KEYWORDS } from "@/lib/keywords";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin", "latin-ext"],
-  display: "swap",
-});
-
-const sora = Sora({
-  variable: "--font-sora",
-  subsets: ["latin", "latin-ext"],
-  display: "swap",
-});
 
 export const viewport: Viewport = {
   themeColor: "#db0000",
@@ -61,10 +48,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="tr"
-      className={`${inter.variable} ${sora.variable} h-full antialiased`}
-    >
+    <html lang="tr" className="h-full antialiased">
       <body className="min-h-full flex flex-col overflow-x-hidden bg-background text-white selection:bg-pink/30 selection:text-white">
         <JsonLd data={[organizationJsonLd(), websiteJsonLd()]} />
         {children}

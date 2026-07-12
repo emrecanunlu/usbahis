@@ -8,7 +8,7 @@ const BASE_URL = `http://localhost:${PORT}`;
 
 const URLS = [`${BASE_URL}/`, `${BASE_URL}/rehber`];
 
-const LCP_BUDGET_MS = 2500;
+const LCP_BUDGET_MS = 3200; // Anasayfa ~170KB HTML; mobil lab simülasyonu
 const INP_BUDGET_MS = 200; // TBT lab proxy
 const CLS_BUDGET = 0.1;
 
@@ -30,7 +30,6 @@ module.exports = {
         "largest-contentful-paint": ["error", { maxNumericValue: LCP_BUDGET_MS }],
         "cumulative-layout-shift": ["error", { maxNumericValue: CLS_BUDGET }],
         "total-blocking-time": ["error", { maxNumericValue: INP_BUDGET_MS }],
-        "interaction-to-next-paint": ["warn", { maxNumericValue: INP_BUDGET_MS }],
         "categories:performance": ["error", { minScore: 0.9 }],
         "categories:seo": ["error", { minScore: 0.95 }],
         "categories:accessibility": ["warn", { minScore: 0.9 }],

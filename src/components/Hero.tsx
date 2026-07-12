@@ -3,7 +3,7 @@ import { SITE } from "@/lib/site";
 
 export function Hero() {
   return (
-    <section className="relative isolate overflow-hidden border-b border-soft">
+    <section className="relative isolate min-h-[70vh] overflow-hidden border-b border-soft sm:min-h-0">
       <div
         aria-hidden
         className="absolute inset-0 -z-10 bg-[radial-gradient(60%_70%_at_50%_-10%,var(--hero-glow-a),transparent_70%),radial-gradient(50%_50%_at_85%_30%,var(--hero-glow-b),transparent_70%)]"
@@ -15,20 +15,12 @@ export function Hero() {
             {SITE.name} Resmi Tanıtım Sitesi — Giriş 2026
           </span>
 
-          <h1 className="font-display mt-5 text-[26px] font-bold leading-[1.15] tracking-tight sm:text-4xl lg:text-[48px]">
+          <h1 className="font-display mt-5 text-[36px] font-bold leading-[1.1] tracking-tight sm:text-4xl lg:text-[48px]">
             {SITE.name}{" "}
-            <span className="text-gradient-neon">Giriş</span>
+            <span className="text-pink">Giriş</span>
             <br className="hidden sm:block" />
             <span className="text-white"> — Güncel Adres 2026</span>
           </h1>
-
-          <p className="mt-5 text-base leading-7 text-body sm:text-lg">
-            Kalıcı giriş linki{" "}
-            <strong className="text-white">{SITE.domain}</strong> üzerinden
-            lisanslı canlı bahis, casino, 5.000+ slot ve Aviator. Domain
-            değişse bile otomatik yönlendirme; %100 hoş geldin bonusu ve 7/24
-            Türkçe destek.
-          </p>
 
           <div className="mt-7 flex flex-wrap items-center gap-3">
             <a
@@ -68,42 +60,8 @@ export function Hero() {
               Giriş Rehberi
             </Link>
           </div>
-
-          <ul className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-muted">
-            <li className="inline-flex items-center gap-2">
-              <CheckIcon /> Kalıcı link: {SITE.domain}
-            </li>
-            <li className="inline-flex items-center gap-2">
-              <CheckIcon /> %100 Hoş Geldin Bonusu
-            </li>
-            <li className="inline-flex items-center gap-2">
-              <CheckIcon /> 3 dakikada para çekim
-            </li>
-            <li className="inline-flex items-center gap-2">
-              <CheckIcon /> Telegram: {SITE.telegramUrl.replace("https://", "")}
-            </li>
-          </ul>
         </div>
       </div>
     </section>
-  );
-}
-
-function CheckIcon() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      className="h-4 w-4 text-pink"
-      aria-hidden="true"
-    >
-      <path
-        d="m5 12 5 5L20 7"
-        stroke="currentColor"
-        strokeWidth="2.4"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
   );
 }
