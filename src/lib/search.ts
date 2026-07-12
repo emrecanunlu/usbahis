@@ -2,6 +2,7 @@ import { getAllPosts } from "./posts";
 import { GAMES } from "./games";
 import { getAllSeoPages } from "./seo-pages";
 import { getAllPartners } from "./backlinks";
+import { POPULAR_SEARCHES } from "./keywords";
 
 export type SearchResult = {
   id: string;
@@ -59,7 +60,7 @@ export function searchSite(query: string, limit = 30): SearchResult[] {
   const results: SearchResult[] = [];
 
   for (const p of getAllPosts()) {
-    const blob = `${p.title} ${p.excerpt} ${p.category} ${p.content}`;
+    const blob = `${p.title} ${p.excerpt} ${p.category} ${p.content} ${(p.keywords ?? []).join(" ")}`;
     const score = scoreText(blob, terms);
     if (score > 0) {
       results.push({
@@ -136,14 +137,5 @@ export function searchSite(query: string, limit = 30): SearchResult[] {
 }
 
 export function getPopularSearches(): string[] {
-  return [
-    "UsBahis giriş",
-    "güncel adres",
-    "hoş geldin bonusu",
-    "canlı bahis",
-    "Aviator",
-    "casino",
-    "mobil giriş",
-    "güvenilir mi",
-  ];
+  return [...POPULAR_SEARCHES];
 }

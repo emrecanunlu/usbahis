@@ -16,6 +16,7 @@ import {
   faqJsonLd,
   webPageJsonLd,
 } from "@/lib/seo";
+import { getGameKeywords } from "@/lib/keywords";
 
 export function generateStaticParams() {
   return GAMES.map((g) => ({ slug: g.slug }));
@@ -35,7 +36,7 @@ export async function generateMetadata({
     title: game.title,
     description: game.intro.slice(0, 160),
     path: `/oyunlar/${slug}`,
-    keywords: [game.badge, game.subtitle],
+    keywords: getGameKeywords(slug),
     ogImage: game.image,
   });
 }

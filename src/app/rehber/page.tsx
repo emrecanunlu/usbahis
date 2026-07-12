@@ -9,13 +9,14 @@ import { PartnerSites } from "@/components/PartnerSites";
 import { JsonLd } from "@/components/JsonLd";
 import { getAllSeoPages } from "@/lib/seo-pages";
 import { buildMetadata, breadcrumbJsonLd, webPageJsonLd } from "@/lib/seo";
+import { PAGE_KEYWORDS } from "@/lib/keywords";
 
 export const metadata: Metadata = buildMetadata({
-  title: "UsBahis Rehber | Giriş, Bonus ve Oyun Kılavuzları",
+  title: "UsBahis Rehber 2026 | Giriş, Bonus ve Oyun Kılavuzları",
   description:
-    "UsBahis rehber sayfaları: güncel giriş, bonus, canlı bahis, casino, Aviator, mobil giriş ve güvenilirlik incelemesi. SEO uyumlu detaylı kılavuzlar.",
+    "UsBahis rehber: güncel giriş linki, hoş geldin bonusu, canlı bahis, casino, slot, Aviator, mobil giriş ve güvenilirlik incelemesi. Tüm SEO rehber sayfaları.",
   path: "/rehber",
-  keywords: ["UsBahis rehber", "UsBahis kılavuz", "UsBahis bilgi"],
+  keywords: [...PAGE_KEYWORDS.rehber],
 });
 
 export default function RehberIndex() {

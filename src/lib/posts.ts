@@ -1,3 +1,5 @@
+import { getPostKeywords } from "./keywords";
+
 export type Post = {
   slug: string;
   title: string;
@@ -7,7 +9,12 @@ export type Post = {
   date: string;
   readingTime: number;
   content: string;
+  keywords?: string[];
 };
+
+function withKeywords(post: Post): Post {
+  return { ...post, keywords: getPostKeywords(post.slug) };
+}
 
 export const POSTS: Post[] = [
   {
@@ -17,7 +24,7 @@ export const POSTS: Post[] = [
       "UsBahis'in güncel giriş adresi ve erişim engellerinden etkilenmeden siteye nasıl ulaşılır? 2026 yılı için yeni adresler ve güvenli giriş yöntemleri.",
     category: "Güncel Giriş",
     categorySlug: "guncel",
-    date: "2026-06-15",
+    date: "2026-07-13",
     readingTime: 4,
     content: `
 <p><strong>UsBahis</strong>, Türkiye'nin en güvenilir bahis ve casino platformlarından biri olarak hizmet vermeye devam ediyor. Erişim engelleri nedeniyle zaman zaman domain adresi güncellenmek zorunda kalsa da, platform her zaman aynı kalitede hizmetini sürdürüyor.</p>
@@ -98,7 +105,7 @@ export const POSTS: Post[] = [
   },
   {
     slug: "usbahis-canli-casino-rehberi",
-    title: "UsBahis Canlı Casino Rehberi: Hangi Oyunlar Var?",
+    title: "UsBahis Canlı Casino Rehberi 2026: Hangi Oyunlar Var?",
     excerpt:
       "Evolution Gaming, Ezugi ve Pragmatic Live ile UsBahis'in canlı casino bölümünde sunulan oyunlar. Rulet, Blackjack, Baccarat ve Game Show seçenekleri.",
     category: "Canlı Casino",
@@ -154,7 +161,7 @@ export const POSTS: Post[] = [
   },
   {
     slug: "usbahis-slot-oyunlari",
-    title: "UsBahis'te En Popüler Slot Oyunları",
+    title: "UsBahis Slot Oyunları 2026: En Popüler 10 Slot",
     excerpt:
       "Sweet Bonanza, Gates of Olympus, Starlight Princess ve daha fazlası. UsBahis'in slot kataloğundan en yüksek RTP'li ve en kazançlı oyunların incelemesi.",
     category: "Slot Oyunları",
@@ -273,7 +280,7 @@ export const POSTS: Post[] = [
   },
   {
     slug: "usbahis-odeme-yontemleri",
-    title: "UsBahis Ödeme Yöntemleri: Hızlı Yatırım ve Çekim",
+    title: "UsBahis Ödeme Yöntemleri 2026: Papara, Kripto ve Hızlı Çekim",
     excerpt:
       "Papara, kripto para, havale ve daha fazlası. UsBahis'in desteklediği tüm ödeme yöntemleri, alt-üst limitler ve işlem süreleri.",
     category: "Rehber",
@@ -357,7 +364,8 @@ export const POSTS: Post[] = [
 ];
 
 export function getPostBySlug(slug: string): Post | undefined {
-  return POSTS.find((p) => p.slug === slug);
+  const post = POSTS.find((p) => p.slug === slug);
+  return post ? withKeywords(post) : undefined;
 }
 
 export function getRelatedPosts(slug: string, limit = 3): Post[] {
@@ -373,9 +381,9 @@ export function getRelatedPosts(slug: string, limit = 3): Post[] {
 }
 
 export function getAllPosts(): Post[] {
-  return [...POSTS].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-  );
+  return [...POSTS]
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .map(withKeywords);
 }
 
 export function formatDate(dateStr: string): string {

@@ -4,8 +4,12 @@ export const FAQ_ITEMS = [
     a: "UsBahis güncel giriş linki usgrs.link/usgir adresidir. Bu kalıcı yönlendirme linki domain değişse bile her zaman güncel adrese otomatik yönlendirir; sayfanın üst kısmındaki 'Güncel Giriş Adresi' butonunu da kullanabilirsin.",
   },
   {
-    q: "Üyelik açmak ücretsiz mi?",
-    a: "Evet. Üyelik tamamen ücretsizdir ve 30 saniye içinde tamamlanır. Telefon numaran ile temel bilgilerin yeterli; ardından ilk yatırımına %100 hoş geldin bonusunu otomatik alabilirsin.",
+    q: "UsBahis telegram giriş linki nedir?",
+    a: "UsBahis resmi Telegram kanalı t.me/usgiris adresindedir. Güncel giriş duyuruları, bonus kampanyaları ve adres değişiklikleri buradan anında paylaşılır.",
+  },
+  {
+    q: "UsBahis hoş geldin bonusu nasıl alınır?",
+    a: "Üye olduktan sonra ilk yatırımında minimum 50 TL yatır; yatırım ekranından hoş geldin bonusunu seç. %100 bonus (max 20.000 TL) ve 50 free spin otomatik tanımlanır.",
   },
   {
     q: "Para çekme işlemleri ne kadar sürer?",

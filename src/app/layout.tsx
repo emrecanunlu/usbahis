@@ -7,6 +7,7 @@ import {
   organizationJsonLd,
   websiteJsonLd,
 } from "@/lib/seo";
+import { SITE_KEYWORDS } from "@/lib/keywords";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -29,22 +30,14 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   ...buildMetadata({
-    title: "UsBahis | Güvenilir Bahis ve Casino",
+    title: "UsBahis Giriş 2026 | Güncel Adres, Bonus ve Casino",
     description:
-      "UsBahis resmi tanıtım sitesi. Lisanslı canlı bahis, casino, slot, Aviator. Güncel giriş, bonus rehberleri, partner siteler ve 7/24 destek.",
+      "UsBahis resmi tanıtım sitesi. Güncel giriş usgrs.link/usgir, %100 hoş geldin bonusu, canlı bahis, casino, slot, Aviator. Telegram giriş, mobil erişim ve 7/24 destek.",
     path: "/",
-    keywords: [
-      "UsBahis giriş",
-      "UsBahis güncel adres",
-      "canlı bahis",
-      "canlı casino",
-      "slot oyunları",
-      "Aviator",
-      "bonus",
-    ],
+    keywords: [...SITE_KEYWORDS],
   }),
   title: {
-    default: "UsBahis | Güvenilir Bahis ve Casino",
+    default: "UsBahis Giriş 2026 | Güncel Adres, Bonus ve Casino",
     template: "%s | UsBahis",
   },
   metadataBase: new URL(

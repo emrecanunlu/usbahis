@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PRIMARY_KEYWORDS } from "./keywords";
 import { SITE } from "./site";
 
 type PageMeta = {
@@ -37,12 +38,7 @@ export function buildMetadata({
   return {
     title: path === "" || path === "/" ? undefined : title,
     description: description.slice(0, 160),
-    keywords: [
-      SITE.name,
-      "UsBahis giriş",
-      "UsBahis güncel adres",
-      ...keywords,
-    ],
+    keywords: [...new Set([...PRIMARY_KEYWORDS, ...keywords])],
     alternates: { canonical: url },
     openGraph: {
       title: fullTitle,

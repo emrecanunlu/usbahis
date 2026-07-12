@@ -7,13 +7,14 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE } from "@/lib/site";
 import { buildMetadata, breadcrumbJsonLd, webPageJsonLd } from "@/lib/seo";
+import { PAGE_KEYWORDS } from "@/lib/keywords";
 
 export const metadata: Metadata = buildMetadata({
-  title: "İletişim",
+  title: "UsBahis İletişim | 7/24 Destek ve Telegram",
   description:
-    "UsBahis ile iletişime geçin. Üyelik, bonus, teknik destek ve genel sorularınız için formu doldurun veya Telegram kanalımıza yazın.",
+    "UsBahis iletişim: üyelik, bonus, giriş ve teknik destek için form veya Telegram kanalı. 7/24 Türkçe canlı destek, hızlı yanıt garantisi.",
   path: "/iletisim",
-  keywords: ["UsBahis iletişim", "UsBahis destek"],
+  keywords: [...PAGE_KEYWORDS.iletisim],
 });
 
 const CHANNELS = [

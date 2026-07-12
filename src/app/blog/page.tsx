@@ -9,13 +9,14 @@ import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { buildMetadata, breadcrumbJsonLd, webPageJsonLd } from "@/lib/seo";
 import { CATEGORIES } from "@/lib/site";
+import { PAGE_KEYWORDS } from "@/lib/keywords";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Blog & Rehber",
+  title: "UsBahis Blog 2026 | Giriş, Bonus ve Casino Rehberleri",
   description:
-    "UsBahis hakkında rehberler, bonus duyuruları, oyun incelemeleri ve güncel gelişmeler. Spor bahsi, casino, slot ve Aviator stratejileri.",
+    "UsBahis blog: güncel giriş adresi, hoş geldin bonusu, canlı casino, slot oyunları, Aviator stratejileri ve ödeme yöntemleri hakkında güncel yazılar.",
   path: "/blog",
-  keywords: ["UsBahis blog", "bahis rehberi", "casino ipuçları"],
+  keywords: [...PAGE_KEYWORDS.blog],
 });
 
 type Props = { searchParams: Promise<{ cat?: string }> };

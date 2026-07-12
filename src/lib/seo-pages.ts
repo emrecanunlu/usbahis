@@ -1,3 +1,5 @@
+import { SEO_PAGE_KEYWORDS } from "./keywords";
+
 export type SeoPage = {
   slug: string;
   title: string;
@@ -17,7 +19,7 @@ export const SEO_PAGES: SeoPage[] = [
     description:
       "UsBahis giriş adresi 2026. usgrs.link/usgir kalıcı linki üzerinden güvenli giriş, üyelik ve bonus talebi. Domain değişse bile otomatik yönlendirme.",
     keywords: ["UsBahis giriş", "UsBahis login", "UsBahis üye girişi"],
-    updatedAt: "2026-06-20",
+    updatedAt: "2026-07-13",
     faq: [
       {
         q: "UsBahis'e nasıl giriş yapılır?",
@@ -50,7 +52,7 @@ export const SEO_PAGES: SeoPage[] = [
     description:
       "UsBahis güncel adres ve kalıcı giriş linki. usgrs.link/usgir — domain değişse bile otomatik yönlendirme.",
     keywords: ["UsBahis güncel adres", "UsBahis yeni link", "usgir"],
-    updatedAt: "2026-06-20",
+    updatedAt: "2026-07-13",
     faq: [
       {
         q: "UsBahis güncel adresi nedir?",
@@ -81,7 +83,7 @@ export const SEO_PAGES: SeoPage[] = [
     description:
       "UsBahis güncel giriş linki usgrs.link/usgir. Kalıcı yönlendirme, mobil ve masaüstü giriş ipuçları.",
     keywords: ["UsBahis güncel giriş", "UsBahis link", "UsBahis erişim"],
-    updatedAt: "2026-06-20",
+    updatedAt: "2026-07-13",
     faq: [
       {
         q: "Güncel giriş linki güvenli mi?",
@@ -106,7 +108,7 @@ export const SEO_PAGES: SeoPage[] = [
     description:
       "UsBahis bonus rehberi: %100 hoş geldin, yatırım bonusu, kayıp iadesi ve Aviator cashback. Çevrim şartları ve talep adımları.",
     keywords: ["UsBahis bonus", "UsBahis hoş geldin", "UsBahis promosyon"],
-    updatedAt: "2026-06-20",
+    updatedAt: "2026-07-13",
     faq: [
       {
         q: "Hoş geldin bonusu kaç TL?",
@@ -132,7 +134,7 @@ export const SEO_PAGES: SeoPage[] = [
     description:
       "UsBahis canlı bahis: futbol, basketbol, tenis, e-spor. 1200+ maç, cash out, canlı izleme ve yüksek oranlar.",
     keywords: ["UsBahis canlı bahis", "UsBahis spor", "UsBahis iddaa"],
-    updatedAt: "2026-06-20",
+    updatedAt: "2026-07-13",
     faq: [
       {
         q: "Canlı bahiste hangi sporlar var?",
@@ -158,7 +160,7 @@ export const SEO_PAGES: SeoPage[] = [
     description:
       "UsBahis casino: Evolution Gaming, Pragmatic Live, 180+ canlı masa, Türkçe krupiye, Crazy Time ve rulet.",
     keywords: ["UsBahis casino", "UsBahis canlı casino", "UsBahis rulet"],
-    updatedAt: "2026-06-20",
+    updatedAt: "2026-07-13",
     faq: [
       {
         q: "Türkçe krupiye var mı?",
@@ -183,7 +185,7 @@ export const SEO_PAGES: SeoPage[] = [
     description:
       "UsBahis slot: Sweet Bonanza, Gates of Olympus, 5000+ video slot, jackpot ve megaways. Demo mod ve bonus buy.",
     keywords: ["UsBahis slot", "UsBahis Sweet Bonanza", "UsBahis slot oyunları"],
-    updatedAt: "2026-06-20",
+    updatedAt: "2026-07-13",
     faq: [
       {
         q: "Slot demo modu var mı?",
@@ -208,7 +210,7 @@ export const SEO_PAGES: SeoPage[] = [
     description:
       "UsBahis Aviator nasıl oynanır? Spribe crash oyunu, otomatik cash out, stratejiler ve günlük cashback.",
     keywords: ["UsBahis Aviator", "UsBahis crash", "Aviator giriş"],
-    updatedAt: "2026-06-20",
+    updatedAt: "2026-07-13",
     faq: [
       {
         q: "Aviator minimum bahis?",
@@ -233,7 +235,7 @@ export const SEO_PAGES: SeoPage[] = [
     description:
       "UsBahis mobil giriş: tarayıcıdan hızlı erişim, responsive arayüz, iOS/Android uyumluluk ve ana ekran kısayolu.",
     keywords: ["UsBahis mobil", "UsBahis mobil giriş", "UsBahis app"],
-    updatedAt: "2026-06-20",
+    updatedAt: "2026-07-13",
     faq: [
       {
         q: "Mobil uygulama var mı?",
@@ -258,7 +260,7 @@ export const SEO_PAGES: SeoPage[] = [
     description:
       "UsBahis güvenilir mi? Curaçao lisansı, SSL şifreleme, ödeme hızı, kullanıcı yorumları ve güvenlik analizi.",
     keywords: ["UsBahis güvenilir mi", "UsBahis lisans", "UsBahis yorum"],
-    updatedAt: "2026-06-20",
+    updatedAt: "2026-07-13",
     faq: [
       {
         q: "UsBahis lisanslı mı?",
@@ -289,7 +291,7 @@ export const SEO_PAGES: SeoPage[] = [
     description:
       "UsBahis ücretsiz bonus, deneme bonusu ve free spin fırsatları. Yeni üyelere özel promosyonlar ve çevrim şartları.",
     keywords: ["UsBahis ücretsiz bonus", "UsBahis deneme bonusu", "UsBahis free spin"],
-    updatedAt: "2026-06-20",
+    updatedAt: "2026-07-13",
     faq: [
       {
         q: "Deneme bonusu var mı?",
@@ -314,7 +316,7 @@ export const SEO_PAGES: SeoPage[] = [
     description:
       "UsBahis yeni adres duyurusu. Domain güncellemesi sonrası giriş, hesap güvenliği ve bildirim kanalları.",
     keywords: ["UsBahis yeni adres", "UsBahis domain", "usgir link"],
-    updatedAt: "2026-06-20",
+    updatedAt: "2026-07-13",
     faq: [
       {
         q: "Yeni adrese geçince hesabım silinir mi?",
@@ -335,9 +337,17 @@ export const SEO_PAGES: SeoPage[] = [
 ];
 
 export function getSeoPageBySlug(slug: string): SeoPage | undefined {
-  return SEO_PAGES.find((p) => p.slug === slug);
+  const page = SEO_PAGES.find((p) => p.slug === slug);
+  if (!page) return undefined;
+  return {
+    ...page,
+    keywords: SEO_PAGE_KEYWORDS[page.slug] ?? page.keywords,
+  };
 }
 
 export function getAllSeoPages(): SeoPage[] {
-  return SEO_PAGES;
+  return SEO_PAGES.map((p) => ({
+    ...p,
+    keywords: SEO_PAGE_KEYWORDS[p.slug] ?? p.keywords,
+  }));
 }

@@ -8,13 +8,14 @@ import { PartnerSites } from "@/components/PartnerSites";
 import { JsonLd } from "@/components/JsonLd";
 import { getAllPartners } from "@/lib/backlinks";
 import { buildMetadata, breadcrumbJsonLd, webPageJsonLd } from "@/lib/seo";
+import { PAGE_KEYWORDS } from "@/lib/keywords";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Partner Bahis Siteleri | Önerilen Platformlar",
+  title: "Partner Bahis Siteleri 2026 | Güvenilir Platformlar",
   description:
-    "UsBahis partner ve önerilen bahis siteleri listesi. Güvenilir, lisanslı platformlar — güncel giriş, bonus ve casino rehberleri.",
+    "UsBahis partner ve önerilen bahis siteleri: güvenilir, lisanslı platformlar, güncel giriş linkleri, bonus karşılaştırması ve casino rehberleri.",
   path: "/partner-siteler",
-  keywords: ["bahis siteleri", "partner siteler", "güvenilir bahis", "UsBahis partner"],
+  keywords: [...PAGE_KEYWORDS.partner],
 });
 
 export default function PartnerPage() {
