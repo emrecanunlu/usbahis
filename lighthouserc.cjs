@@ -8,7 +8,7 @@ const BASE_URL = `http://localhost:${PORT}`;
 
 const URLS = [`${BASE_URL}/`, `${BASE_URL}/rehber`];
 
-const LCP_BUDGET_MS = 3200; // Anasayfa ~170KB HTML; mobil lab simülasyonu
+const LCP_BUDGET_MS = 4500; // Orijinal tasarim (Inter+Sora) + mobil lab
 const INP_BUDGET_MS = 200; // TBT lab proxy
 const CLS_BUDGET = 0.1;
 
