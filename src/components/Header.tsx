@@ -5,14 +5,14 @@ import { SITE, HEADER_NAV } from "@/lib/site";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-soft bg-surface/95">
+    <header className="sticky top-0 z-40 border-b border-soft bg-surface/85 backdrop-blur-md">
       <div className="relative mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link
           href="/"
           aria-label="UsBahis anasayfa"
           className="flex shrink-0 items-center"
         >
-          <BrandMark />
+          <BrandMark priority />
         </Link>
 
         <nav
