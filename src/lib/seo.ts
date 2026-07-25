@@ -15,8 +15,9 @@ type PageMeta = {
 
 export function absoluteUrl(path = ""): string {
   const base = SITE.promoUrl.replace(/\/$/, "");
-  const p = path.startsWith("/") ? path : `/${path}`;
-  return path ? `${base}${p}` : base;
+  if (!path || path === "/") return `${base}/`;
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  return `${base}${cleanPath.replace(/\/+/g, "/")}`;
 }
 
 export function buildMetadata({
