@@ -62,7 +62,7 @@ export const POSTS: Post[] = [
       "İlk yatırımına özel %100 hoş geldin bonusu ve 50 ücretsiz dönüş kampanyasının detayları. Bonus çevrim şartları ve nasıl talep edilir adım adım anlatım.",
     category: "Bonuslar",
     categorySlug: "bonuslar",
-    date: "2026-06-10",
+    date: "2026-07-17",
     readingTime: 5,
     content: `
 <p>UsBahis'e yeni üye olanlar için en cazip kampanyalardan biri <strong>%100 hoş geldin bonusu</strong>dur. İlk yatırımına özel verilen bu bonus, 20.000 TL'ye kadar yatırımın iki katı bakiye almanı sağlar.</p>
@@ -110,7 +110,7 @@ export const POSTS: Post[] = [
       "Evolution Gaming, Ezugi ve Pragmatic Live ile UsBahis'in canlı casino bölümünde sunulan oyunlar. Rulet, Blackjack, Baccarat ve Game Show seçenekleri.",
     category: "Canlı Casino",
     categorySlug: "canli-casino",
-    date: "2026-06-05",
+    date: "2026-07-16",
     readingTime: 6,
     content: `
 <p>UsBahis'in canlı casino bölümü, gerçek krupiyeler eşliğinde dünya standartlarında bir deneyim sunar. Stüdyodan canlı yayınlanan oyunlar HD kalitede ve 7/24 erişilebilir durumdadır.</p>
@@ -166,7 +166,7 @@ export const POSTS: Post[] = [
       "Sweet Bonanza, Gates of Olympus, Starlight Princess ve daha fazlası. UsBahis'in slot kataloğundan en yüksek RTP'li ve en kazançlı oyunların incelemesi.",
     category: "Slot Oyunları",
     categorySlug: "slot",
-    date: "2026-05-28",
+    date: "2026-07-14",
     readingTime: 7,
     content: `
 <p>UsBahis'in slot bölümünde <strong>5.000'den fazla oyun</strong> bulunur. 40'tan fazla sağlayıcının video slot, klasik slot, jackpot ve megaways oyunları platformda yer alır.</p>
@@ -232,7 +232,7 @@ export const POSTS: Post[] = [
       "Spribe'nin geliştirdiği Aviator oyunu nedir, nasıl oynanır ve kazanma stratejileri nelerdir? UsBahis Aviator için pratik rehber.",
     category: "Rehber",
     categorySlug: "rehber",
-    date: "2026-05-20",
+    date: "2026-07-12",
     readingTime: 5,
     content: `
 <p><strong>Aviator</strong>, son yıllarda en popüler crash oyunu haline geldi. Spribe tarafından geliştirilen oyun, basit kuralları ve hızlı sonuçlarıyla milyonlarca oyuncuyu cezbediyor. UsBahis'te Aviator 7/24 oynanabilir durumda.</p>
@@ -285,7 +285,7 @@ export const POSTS: Post[] = [
       "Papara, kripto para, havale ve daha fazlası. UsBahis'in desteklediği tüm ödeme yöntemleri, alt-üst limitler ve işlem süreleri.",
     category: "Rehber",
     categorySlug: "rehber",
-    date: "2026-05-12",
+    date: "2026-07-11",
     readingTime: 6,
     content: `
 <p>UsBahis, Türkiye'deki kullanıcılar için en geniş ödeme seçeneklerinden birini sunar. Tüm yöntemlerde komisyon alınmaz ve işlem süreleri sektör ortalamasının altındadır.</p>

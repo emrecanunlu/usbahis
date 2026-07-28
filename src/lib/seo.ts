@@ -31,13 +31,11 @@ export function buildMetadata({
   publishedTime,
 }: PageMeta): Metadata {
   const url = absoluteUrl(path);
-  const fullTitle =
-    path === "" || path === "/"
-      ? `${SITE.name} | ${SITE.tagline}`
-      : `${title} | ${SITE.name}`;
+  const isHome = path === "" || path === "/";
+  const fullTitle = isHome ? title : `${title} | ${SITE.name}`;
 
   return {
-    title: path === "" || path === "/" ? undefined : title,
+    title: isHome ? undefined : title,
     description: description.slice(0, 160),
     keywords: [...new Set([...PRIMARY_KEYWORDS, ...keywords])],
     alternates: { canonical: url },
@@ -100,7 +98,7 @@ export function websiteJsonLd() {
     name: SITE.name,
     url: absoluteUrl(),
     description:
-      "UsBahis resmi tanıtım sitesi. Güncel giriş, bonuslar, oyun rehberleri ve partner siteler.",
+      `${SITE.name} resmi tanıtım sitesi. Güncel giriş, bonuslar, oyun rehberleri ve partner siteler.`,
     inLanguage: SITE.language,
     publisher: { "@type": "Organization", name: SITE.name },
     potentialAction: {
