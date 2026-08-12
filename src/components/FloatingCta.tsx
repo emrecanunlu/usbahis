@@ -3,7 +3,7 @@ import { SITE } from "@/lib/site";
 export function FloatingCta() {
   return (
     <div className="pointer-events-none fixed inset-x-0 bottom-3 z-40 flex justify-center px-4 sm:bottom-5">
-      <div className="pointer-events-auto inline-flex items-center gap-2 rounded-full bg-surface-3/90 p-1.5  ring-1 ring-pink/20 backdrop-blur">
+      <div className="pointer-events-auto inline-flex items-center gap-2 rounded-full bg-surface-3/90 p-1.5 shadow-[0_10px_30px_-8px_rgba(0,0,0,0.6)] ring-1 ring-pink/20 backdrop-blur">
         <a
           href={SITE.registerUrl}
           target="_blank"

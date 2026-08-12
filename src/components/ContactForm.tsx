@@ -117,7 +117,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={pending}
-        className="inline-flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-md btn-primary px-6 text-sm font-semibold text-white  transition-transform disabled:cursor-not-allowed disabled:opacity-60 active:translate-y-px sm:w-auto"
+        className="inline-flex h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-md btn-primary px-6 text-sm font-semibold text-white transition-transform disabled:cursor-not-allowed disabled:opacity-60 active:translate-y-px sm:w-auto"
       >
         {pending ? (
           <>

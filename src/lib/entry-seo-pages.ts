@@ -1,9 +1,6 @@
-import { SITE } from "./site";
 import { getSeoPageBody } from "./seo-page-bodies";
 
 const UPDATED = "2026-07-28";
-const LINK = SITE.domain;
-const TG = SITE.telegramUrl.replace("https://", "");
 
 export const ENTRY_SEO_PAGES = [
   {

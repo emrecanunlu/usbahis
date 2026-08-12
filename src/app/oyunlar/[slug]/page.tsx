@@ -100,7 +100,7 @@ export default async function GameDetail({
                     href={SITE.registerUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex h-12 cursor-pointer items-center gap-2 rounded-md btn-primary px-6 text-sm font-semibold text-white  transition-transform active:translate-y-px"
+                    className="inline-flex h-12 cursor-pointer items-center gap-2 rounded-md btn-primary px-6 text-sm font-semibold text-white transition-transform active:translate-y-px"
                   >
                     Hemen Üye Ol
                     <svg
@@ -122,7 +122,7 @@ export default async function GameDetail({
                     href={SITE.telegramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex h-12 cursor-pointer items-center gap-2 rounded-md btn-secondary"
+                    className="inline-flex h-12 cursor-pointer items-center gap-2 rounded-md btn-secondary px-5 text-sm font-semibold"
                   >
                     <TelegramIcon />
                     Telegram
@@ -283,7 +283,7 @@ export default async function GameDetail({
                       href={SITE.telegramUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex h-11 cursor-pointer items-center gap-2 rounded-md btn-secondary"
+                      className="inline-flex h-11 cursor-pointer items-center gap-2 rounded-md btn-secondary px-5 text-sm font-semibold"
                     >
                       <TelegramIcon />
                       Telegram&apos;a Katıl

@@ -9,10 +9,10 @@ export function Footer() {
   const partners = getFeaturedPartners(5);
 
   return (
-    <footer className="border-t border-soft bg-[#070218] pb-24 pt-14 sm:pb-12">
+    <footer className="border-t border-soft bg-footer pb-24 pt-14 sm:pb-12">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
-          <div className="lg:col-span-1">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
             <BrandMark size="lg" />
             <p className="mt-4 text-sm leading-6 text-muted">
               {SITE.name} – {SITE.tagline}. Lisanslı canlı bahis, casino ve slot
@@ -45,40 +45,6 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-display text-sm font-bold uppercase tracking-wider text-white">
-              Rehber & SEO
-            </h4>
-            <ul className="mt-4 space-y-2">
-              {SEO_LINKS.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-muted transition-colors hover:text-pink"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-              <li>
-                <Link
-                  href="/partner-siteler"
-                  className="text-sm text-muted transition-colors hover:text-pink"
-                >
-                  Partner Siteler
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/arama"
-                  className="text-sm text-muted transition-colors hover:text-pink"
-                >
-                  Site İçi Arama
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -121,6 +87,40 @@ export function Footer() {
 
         <div className="mt-10 border-t border-soft pt-6">
           <h4 className="font-display text-xs font-bold uppercase tracking-wider text-white">
+            Rehber & SEO
+          </h4>
+          <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
+            {SEO_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="text-sm text-muted transition-colors hover:text-pink"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link
+                href="/partner-siteler"
+                className="text-sm text-muted transition-colors hover:text-pink"
+              >
+                Partner Siteler
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/arama"
+                className="text-sm text-muted transition-colors hover:text-pink"
+              >
+                Site İçi Arama
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <div className="mt-10 border-t border-soft pt-6">
+          <h4 className="font-display text-xs font-bold uppercase tracking-wider text-white">
             Öne Çıkan Partner Siteler
           </h4>
           <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-2">
@@ -139,7 +139,7 @@ export function Footer() {
           </ul>
         </div>
 
-        <div className="mt-6 flex flex-col items-start justify-between gap-4 border-t border-soft pt-6 text-xs text-[#8a82b3] sm:flex-row sm:items-center">
+        <div className="mt-6 flex flex-col items-start justify-between gap-4 border-t border-soft pt-6 text-xs text-muted sm:flex-row sm:items-center">
           <p>© {new Date().getFullYear()} {SITE.name}. Tüm hakları saklıdır.</p>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
             <span className="inline-flex items-center gap-1.5">

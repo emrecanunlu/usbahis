@@ -103,7 +103,7 @@ export default async function RehberPage({
                 href={SITE.registerUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-12 cursor-pointer items-center gap-2 rounded-md btn-primary px-6 text-sm font-semibold text-white  transition-transform active:translate-y-px"
+                className="inline-flex h-12 cursor-pointer items-center gap-2 rounded-md btn-primary px-6 text-sm font-semibold text-white transition-transform active:translate-y-px"
               >
                 Hemen Üye Ol
               </a>

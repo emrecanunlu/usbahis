@@ -66,7 +66,7 @@ function LoginBox() {
         href={SITE.telegramUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-2 inline-flex h-10 w-full cursor-pointer items-center justify-center gap-2 rounded-md btn-secondary"
+        className="mt-2 inline-flex h-10 w-full cursor-pointer items-center justify-center gap-2 rounded-md btn-secondary px-4 text-sm font-semibold"
       >
         <TelegramIcon />
         Telegram

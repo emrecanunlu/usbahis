@@ -51,7 +51,7 @@ export function Header() {
             href={SITE.registerUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden h-10 cursor-pointer items-center rounded-md btn-primary px-4 text-sm font-semibold text-white  transition-transform active:translate-y-px sm:inline-flex"
+            className="hidden h-10 cursor-pointer items-center rounded-md btn-primary px-4 text-sm font-semibold text-white transition-transform active:translate-y-px sm:inline-flex"
           >
             Üye Ol
           </a>

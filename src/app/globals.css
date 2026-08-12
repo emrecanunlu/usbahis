@@ -6,6 +6,7 @@
   --surface: #0c1422;
   --surface-2: #0a172d;
   --surface-3: #14223d;
+  --footer: #03050b;
   --foreground: #ffffff;
   --body: #c8cdd5;
   --muted: #898b91;
@@ -30,6 +31,7 @@
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
   --color-surface-3: var(--surface-3);
+  --color-footer: var(--footer);
   --color-foreground: var(--foreground);
   --color-body: var(--body);
   --color-muted: var(--muted);
@@ -155,6 +157,12 @@ body {
     @apply my-5 rounded-r-xl border-l-4 border-pink bg-white/[0.03] px-5 py-3 italic;
     color: var(--blockquote);
   }
+}
+
+/* Klavye ile gezinenler için görünür odak halkası */
+:where(a, button, summary, [role="button"], [tabindex]:not([tabindex="-1"])):focus-visible {
+  outline: 2px solid var(--pink-soft);
+  outline-offset: 2px;
 }
 
 @media (prefers-reduced-motion: reduce) {
